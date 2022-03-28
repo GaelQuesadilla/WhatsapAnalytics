@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    background: radial-gradient(#0d1620, #0d1620);
+}
+* {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #f0f0f0;
+}
+
+
+.box {
+    border-top: 3px solid #aaaa;
+    margin: 1em 1.3em 2em;
+    padding: 1.5em 0.5em;
+}
+
+.title {
+    margin: 1em;
+    margin-top: 3em;
+
+    text-decoration: underline solid #203090;
+
+}
+.message {
+    margin: 0.75em 0em;
+    background-color: #ffffff10;
+    padding: 0.3em 0.5em;
+    border-radius: 1em;
+    .author{
+        font-size: 1.2em;
+        font-weight: 900;
+        display: block;
+        margin:0.2em;
+    }
+    .msgContent{
+        font-size: 1em;
+        color: #d0d0d0;
+    }
+    .date{
+        font-size: 0.8em;
+        text-align: right;
+        color: #f0f0f0;
+    }
+
+}
+
+input {
+    background-color: #aaa4;
+    font-size: 1.3em;
+    margin: 0.5em;
+}
+button {
+    background-color: #043004;
+    margin: 0.5em;
+    font-size: 1.3em;
+}
+
+#options {
+    border: none;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(to top, #102030, #102035) ;
+    width: 100%;
+    padding-left: 3em;
+    height: 2em;
+    #links {
+        display: inline-block;
+        a {
+            text-decoration: none;
+            margin: 1em;
+            font-weight: bolder;
+            font-size: 1.2em;
+        }
+    } 
+    
+}
+
+// ->   --- COLORS ---
+.red {
+    color: #c02020;
+}
+.green{
+    color: #206040;
+}
+.blue{
+    color:#203090
+}
+.yellow {
+    color: #a08020;
+}
+.cyan {
+    color: #2090a0
+}
+.purple{
+    color: #503090
+}
+// -> --- 
+
+
+@media screen and (min-width: 375px){
+    body{
+        font-size: 20px;
+    }
+    .box {
+        margin: 1em 2em 2em 0.5em;
+    }
+}
+@media screen and (min-width: 768px){
+    body{
+        font-size: 20px;
+    }
+
+    .message {
+        padding: 1em 1em;
+        margin: 1em;
+    }
+    .box {
+        margin: 1em 5em 2em 2em;
+    }
+}
+@media screen and (min-width: 1024px){
+    body{
+        font-size: 22px;
+    }
+    .message {
+        margin: 1em 0em;
+    }
+
+    .box {
+        margin: 1em 12em 2em 5em;
+    }
+}
+@media screen and (min-width: 1440px){
+    body{
+        font-size: 22px;
+    }
+    .message {
+        margin: 1em 0em;
+    }
+
+    .box {
+        margin: 1em 12em 2em 5em;
+    }
+}
